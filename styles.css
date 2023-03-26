@@ -1,0 +1,35 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-container {
+    display: flex;
+}
+
+.item {
+    width: 35vw;
+    min-width: 250px;
+    text-align: center;
+}
+
+img {
+    border: 3px solid black;
+    background-color: ghostwhite;
+    padding: 2vw;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+div {
+    margin: 1vw;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+  }
+
+h3 {
+    font-size: small;
+}

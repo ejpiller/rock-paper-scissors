@@ -10,39 +10,39 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Work Sans", sans-serif;
-      }
-
-      .margin {
-        margin-top: 5rem;
-      }
-
-      .container {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 10%;
-        left: 0;
-        right: 0;
-      }
-
-      .child {
-        text-align: center;
-      }
-    </style>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <div class="child">
-        <h1>Rock, Paper, Scissors</h1>
-        <p>How about a game?</p>
-        <button>Play</button>
+    <div class="main-container">
+      <div class="h-container">
+        <div class="item" style="min-width: 500px">
+          <h1>Rock, Paper, Scissors</h1>
+          <p>How about a game?</p>
+          <button>Play</button>
+        </div>
       </div>
-      <div class="child margin">
-        <p id="roll"></p>
-        <p id="result"></p>
+      <div class="h-container">
+        <div class="item">
+          <h2>You</h2>
+          <h3>Total Score</h3>
+          <p id="you-score"><b>2</b></p>
+          <div class="image-block">
+            <img id="you-image" src="question-mark.svg" />
+          </div>
+          <p id="you-choice">You chose <b>rock</b>.</p>
+        </div>
+        <div class="item">
+          <h2>Opponent</h2>
+          <h3>Total Score</h3>
+          <p id="opponent-score"><b>1</b></p>
+          <div class="image-block">
+            <img id="opponent-image" src="question-mark.svg" />
+          </div>
+          <p id="opponent-choice">Your opponent chose <b>scissors</b>.</p>
+        </div>
+      </div>
+      <div class="item">
+        <p id="result">You win! Play again?</p>
       </div>
     </div>
     <script src="rock-paper-scissors.js"></script>
